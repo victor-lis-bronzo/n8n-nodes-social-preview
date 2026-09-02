@@ -17,9 +17,9 @@ export async function fetchFontBuffer(fontName: string): Promise<ArrayBuffer> {
 		// Example URL for Inter: https://github.com/google/fonts/raw/main/ofl/inter/Inter-Regular.ttf
 		
 		const fontUrls: Record<string, string> = {
-			'Inter': 'https://github.com/rsms/inter/raw/master/docs/font/Inter-Regular.ttf',
-			'Roboto': 'https://github.com/google/fonts/raw/main/apache/roboto/static/Roboto-Regular.ttf',
-			'Open Sans': 'https://github.com/google/fonts/raw/main/ofl/opensans/OpenSans%5Bwdth%2Cwght%5D.ttf',
+			'Inter': 'https://cdn.jsdelivr.net/npm/@fontsource/inter@5.0.19/files/inter-latin-400-normal.woff',
+			'Roboto': 'https://cdn.jsdelivr.net/npm/@fontsource/roboto@5.0.13/files/roboto-latin-400-normal.woff',
+			'Open Sans': 'https://cdn.jsdelivr.net/npm/@fontsource/open-sans@5.0.28/files/open-sans-latin-400-normal.woff',
 		};
 
 		const url = fontUrls[fontName] || fontUrls['Inter']; // Default to Inter

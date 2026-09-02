@@ -45,7 +45,7 @@ export function buildTechLayout(options: TemplateOptions): string {
 			
 			<div style="display: flex; width: 35%; background-color: rgba(0,0,0,0.2); align-items: center; justify-content: center; position: relative;">
 				${imageUri ? `
-					<div style="position: relative;">
+					<div style="display: flex; position: relative;">
 						<div style="position: absolute; top: -20px; left: -20px; right: -20px; bottom: -20px; border: 1px solid ${accentColor}; opacity: 0.3;"></div>
 						<img src="${imageUri}" style="width: 250px; height: 250px; object-fit: cover; filter: brightness(1.1) contrast(1.1);" />
 					</div>

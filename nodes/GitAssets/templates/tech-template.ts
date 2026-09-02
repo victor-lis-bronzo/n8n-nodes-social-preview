@@ -21,9 +21,9 @@ export function buildTechLayout(options: TemplateOptions): string {
 	return `
 		<div style="display: flex; flex-direction: row; width: 1200px; height: 630px; ${bgStyle} padding: 0; font-family: 'Inter', sans-serif; overflow: hidden; position: relative;">
 			<!-- Tech accents -->
-			<div style="position: absolute; top: 0; left: 0; width: 100%; height: 8px; background-color: ${accentColor};"></div>
-			<div style="position: absolute; bottom: 40px; right: 40px; width: 200px; height: 1px; background-color: ${accentColor}; opacity: 0.5;"></div>
-			<div style="position: absolute; bottom: 40px; right: 40px; height: 200px; width: 1px; background-color: ${accentColor}; opacity: 0.5;"></div>
+			<div style="display: flex; position: absolute; top: 0; left: 0; width: 100%; height: 8px; background-color: ${accentColor};"></div>
+			<div style="display: flex; position: absolute; bottom: 40px; right: 40px; width: 200px; height: 1px; background-color: ${accentColor}; opacity: 0.5;"></div>
+			<div style="display: flex; position: absolute; bottom: 40px; right: 40px; height: 200px; width: 1px; background-color: ${accentColor}; opacity: 0.5;"></div>
 			
 			<div style="display: flex; flex-direction: column; width: 65%; padding: 80px 60px; justify-content: center; z-index: 10;">
 				<div style="display: flex; align-items: center; margin-bottom: 20px;">
@@ -46,7 +46,7 @@ export function buildTechLayout(options: TemplateOptions): string {
 			<div style="display: flex; width: 35%; background-color: rgba(0,0,0,0.2); align-items: center; justify-content: center; position: relative;">
 				${imageUri ? `
 					<div style="display: flex; position: relative;">
-						<div style="position: absolute; top: -20px; left: -20px; right: -20px; bottom: -20px; border: 1px solid ${accentColor}; opacity: 0.3;"></div>
+						<div style="display: flex; position: absolute; top: -20px; left: -20px; right: -20px; bottom: -20px; border: 1px solid ${accentColor}; opacity: 0.3;"></div>
 						<img src="${imageUri}" style="width: 250px; height: 250px; object-fit: cover; filter: brightness(1.1) contrast(1.1);" />
 					</div>
 				` : `

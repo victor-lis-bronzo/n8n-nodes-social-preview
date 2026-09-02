@@ -27,17 +27,17 @@ export function buildTechLayout(options: TemplateOptions): string {
 			
 			<div style="display: flex; flex-direction: column; width: 65%; padding: 80px 60px; justify-content: center; z-index: 10;">
 				<div style="display: flex; align-items: center; margin-bottom: 20px;">
-					<span style="background-color: ${brandColor}; color: white; padding: 4px 12px; font-size: 14px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase;">
+					<span style="display: flex; background-color: ${brandColor}; color: white; padding: 4px 12px; font-size: 14px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase;">
 						Digital Asset
 					</span>
 				</div>
-				<h1 style="font-size: 64px; line-height: 1.2; font-weight: 900; color: ${textColor}; margin: 0; letter-spacing: -1px;">
+				<h1 style="display: flex; font-size: 64px; line-height: 1.2; font-weight: 900; color: ${textColor}; margin: 0; letter-spacing: -1px;">
 					${title}
 				</h1>
-				${subtitle ? `<p style="font-size: 28px; color: ${secondaryTextColor}; margin-top: 30px; line-height: 1.5;">${subtitle}</p>` : ''}
+				${subtitle ? `<p style="display: flex; font-size: 28px; color: ${secondaryTextColor}; margin-top: 30px; line-height: 1.5;">${subtitle}</p>` : ''}
 				
 				<div style="display: flex; align-items: center; margin-top: 60px;">
-					<div style="font-size: 18px; color: ${accentColor}; font-weight: 700; border-bottom: 2px solid ${accentColor}; padding-bottom: 4px;">
+					<div style="display: flex; font-size: 18px; color: ${accentColor}; font-weight: 700; border-bottom: 2px solid ${accentColor}; padding-bottom: 4px;">
 						BY ${author?.toUpperCase() || 'SYSTEM'}
 					</div>
 				</div>
@@ -50,7 +50,7 @@ export function buildTechLayout(options: TemplateOptions): string {
 						<img src="${imageUri}" style="width: 250px; height: 250px; object-fit: cover; filter: brightness(1.1) contrast(1.1);" />
 					</div>
 				` : `
-					<div style="width: 200px; height: 200px; border: 2px dashed ${accentColor}; opacity: 0.2;"></div>
+					<div style="display: flex; width: 200px; height: 200px; border: 2px dashed ${accentColor}; opacity: 0.2;"></div>
 				`}
 			</div>
 		</div>

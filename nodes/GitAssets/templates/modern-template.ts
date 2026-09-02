@@ -28,19 +28,19 @@ export function buildModernLayout(options: TemplateOptions): string {
 		<div style="display: flex; flex-direction: column; width: 1200px; height: 630px; ${bgStyle} padding: 60px; justify-content: space-between; font-family: 'Inter', sans-serif;">
 			<div style="display: flex; flex-direction: column;">
 				${imageUri ? `<img src="${imageUri}" style="width: 100px; height: 100px; border-radius: 50px; border: 4px solid ${brandColor}; margin-bottom: 24px;" />` : ''}
-				<h1 style="font-size: 72px; line-height: 1.1; font-weight: 800; color: ${textColor}; margin: 0; max-width: 900px;">
+				<h1 style="display: flex; font-size: 72px; line-height: 1.1; font-weight: 800; color: ${textColor}; margin: 0; max-width: 900px;">
 					${title}
 				</h1>
-				${subtitle ? `<p style="font-size: 32px; color: ${secondaryTextColor}; margin-top: 24px;">${subtitle}</p>` : ''}
+				${subtitle ? `<p style="display: flex; font-size: 32px; color: ${secondaryTextColor}; margin-top: 24px;">${subtitle}</p>` : ''}
 			</div>
 			<div style="display: flex; align-items: center; justify-content: space-between;">
 				<div style="display: flex; align-items: center;">
-					<div style="width: 12px; height: 48px; background-color: ${brandColor}; margin-right: 16px;"></div>
-					<span style="font-size: 24px; font-weight: 600; color: ${textColor}; text-transform: uppercase; letter-spacing: 2px;">
+					<div style="display: flex; width: 12px; height: 48px; background-color: ${brandColor}; margin-right: 16px;"></div>
+					<span style="display: flex; font-size: 24px; font-weight: 600; color: ${textColor}; text-transform: uppercase; letter-spacing: 2px;">
 						${author || 'Social Preview'}
 					</span>
 				</div>
-				<div style="font-size: 20px; color: ${secondaryTextColor}; opacity: 0.8;">
+				<div style="display: flex; font-size: 20px; color: ${secondaryTextColor}; opacity: 0.8;">
 					Generated with n8n
 				</div>
 			</div>

@@ -47,7 +47,7 @@ export async function generateSocialPreviewImage(options: ImageGenerationOptions
 	}
 
 	// 3. Convert HTML string to Satori-friendly structure
-	const markup = html(htmlString);
+	const markup = html(htmlString.trim());
 
 	// 4. Generate SVG via Satori
 	const svg = await satori(markup, {

@@ -1,6 +1,8 @@
-# 🖼️ n8n-nodes-social-preview
+# 🖼️ n8n-nodes-git-assets
 
-[![npm version](https://img.shields.io/npm/v/n8n-nodes-social-preview.svg)](https://www.npmjs.com/package/n8n-nodes-social-preview)
+> O pacote no npm é `n8n-nodes-git-assets`. O nome antigo `n8n-nodes-social-preview` foi despublicado.
+
+[![npm version](https://img.shields.io/npm/v/n8n-nodes-git-assets.svg)](https://www.npmjs.com/package/n8n-nodes-git-assets)
 [![n8n](https://img.shields.io/badge/n8n-community--node-red.svg)](https://n8n.io)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -20,7 +22,7 @@ Este node traz o **Satori** (o motor de renderização da Vercel) e o **Resvg** 
 
 ---
 
-## ✨ Funcionalidades (v1.0.0)
+## ✨ Funcionalidades
 
 - **3 Templates Premium**: Escolha entre `Modern`, `Tech` e `Minimalist`.
 - **Temas Dinâmicos**: Suporte a temas `Light`, `Dark` e o deslumbrante `Gradient`.
@@ -34,6 +36,7 @@ Este node traz o **Satori** (o motor de renderização da Vercel) e o **Resvg** 
 
 | Modern | Tech | Minimalist |
 | :--- | :--- | :--- |
+| ![Modern](examples/modern-light.png) | ![Tech](examples/tech-dark.png) | ![Minimalist](examples/minimalist-gradient.png) |
 | **Equilibrado e Elegante.** Perfeito para blogs e notícias. Foco na tipografia e no autor. | **Digital e Estruturado.** Ideal para ativos digitais, DevOps, métricas ou anúncios de software. | **Puro e Artístico.** Foco total na mensagem. Minimalismo extremo para citações ou convites. |
 
 ---
@@ -42,7 +45,7 @@ Este node traz o **Satori** (o motor de renderização da Vercel) e o **Resvg** 
 
 1. Vá em **Settings > Community Nodes** na sua instância n8n.
 2. Clique em **Install a new node**.
-3. Digite `n8n-nodes-social-preview`.
+3. Digite `n8n-nodes-git-assets`.
 4. Aceite os termos e pronto!
 
 ---
